@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồng Sấy Dẻo Đà Lạt</title>
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/hong.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="/assets/fontawesome-free-5.15.4-web/js/all.min.js">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Fruity</a>
+
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <!-- liên hệ -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <div>
+                        <div>Hotline:</div>
+                        <div>19002004</div>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div>
+                        <div>Email:</div>
+                        <div>support@fruity.vn</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tài khoản -->
+            <div class="user-actions">
+               <div class="account-dropdown">
+                    <button class="account-button">
+                        <i class="fas fa-user"></i>
+                        Tài Khoản
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="account-item">Đăng Nhập</a>
+                        <a href="#" class="account-item">Đăng Ký</a>
+                   </div>
+               </div>
+
+               <!-- giỏ hàng -->
+                <a href="#" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- navbar -->
+    <div class="navbar-wrapper">
+        <div class="navbar" id="navbar">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-links active">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-links">Giới Thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-links dropdown-toggle">Sản Phẩm <i class="fas fa-chevron-down"></i></a>
+                        <div class="nav-dropdown">
+                            <a href="#" class="dropdown-item">Trái Cây</a>
+                            <a href="#" class="dropdown-item">Trái Cây Việt</a>
+                            <a href="#" class="dropdown-item">Trái Cây Nhập Khẩu</a>
+                            <a href="#" class="dropdown-item">Trái Cây Khô</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-links">Tin Tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-links">Liên Hệ</a>
+                    </li>
+
+                    <div class="flash-sale">
+                        <i class="fas fa-bolt"></i>
+                        Flash Sale
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- thông tin sản phẩm -->
+     <div class="container">
+        <div class="product-section">
+            <div class="product-image">
+                <img src="/assets/img/hongsay1.png" alt="">
+            </div>
+
+            <div class="product-details">
+                <h1 class="product-title">
+                    Hồng Sấy Dẻo Đà Lạt 500g
+                </h1>
+                
+                <div class="product-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Thương hiệu:</span>
+                        <span class="meta-value">NongsanViet</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Tình trạng:</span>
+                        <span class="meta-value">Còn hàng</span>
+                    </div>
+                </div>
+    
+                <div class="product-price">
+                    <span>130.000 đ</span>
+                </div>
+    
+                <div class="product-info">
+                    <div class="info-item">
+                        <strong>Nguồn gốc:</strong> Việt Nam
+                    </div>
+                    <div class="info-item">
+                        <strong>Khối lượng:</strong> 0.5 Kg/hộp
+                    </div>
+                </div>
+    
+                <div class="product-description">
+                    <p>Từ những trái hồng tươi đã thật già vàng ươm trên cây được hái xuống và để chín mọng sau đó gọt vỏ và được sấy dẻo theo quy trình nghiêm ngặt, 
+                        NongsanViet cung cấp sản phẩm hồng sấy dẻo thủ công với “bí kíp” gia truyền, đảm bảo vệ sinh an toàn thực phẩm và không sử dụng bất cứ phụ gia nào.
+                    </p>
+                </div>
+    
+                <div class="quantity-control">
+                    <div class="quantity-btn decrease">-</div>
+                    <input type="text" class="quantity-input" id="quantity" value="1" readonly>
+                    <div class="quantity-btn increase">+</div>
+                </div>
+    
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Thêm vào giỏ hàng
+                </button>
+            </div>
+         </div>
+     </div>
+     
+
+    <!-- thông tin thêm -->
+    <div class="container">
+        <h1 class="extra">SẢN PHẨM LIÊN QUAN</h1>
+
+    <div class="extra-products">
+        <a href="hauhau.html" target="_blank" class="extra-product">
+            <div class="extra-product-image">
+                <img src="/assets/img/duahau1 (1).png" alt="">
+            </div>
+            <div class="extra-product-details">
+                <div class="extra-product-name">Dưa hấu không hạt</div>
+            <div class="extra-product-price">40.700 đ</div>
+            </div>
+        </a>
+        
+        <a href="vai.html" target="_blank" class="extra-product">
+            <div class="extra-product-image">
+                <img src="/assets/img/vải1.webp" alt="">
+            </div>
+            <div class="extra-product-details">
+                <div class="extra-product-name">Trái vải</div>
+                <div class="extra-product-price">79.000 đ</div>
+            </div>
+        </a>
+
+        <a href="xoai.html" target="_blank" class="extra-product">
+            <div class="extra-product-image">
+                <img src="/assets/img/xoaisay2.jpg" alt="">
+            </div>
+            <div class="extra-product-details">
+                <div class="extra-product-name">Xoài sấy dẻo</div>
+                <div class="extra-product-price">60.000 đ</div>
+            </div>
+        </a>
+    </div>
+
+    <!-- mô tả và tin tức -->
+    <div class="main-content">
+        <div class="left-content">
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-button active">MÔ TẢ</button>
+                </div>
+
+                <!-- mô tả -->
+                <div class="tab-content">
+                    <p>
+                        Hồng sấy dẻo là một trong những loại đặc sản đặc biệt của Đà Lạt. Đặc biệt bởi vị ngon, ngọt đậm của mật hồng, dẻo, quánh và hương thơm lừng từ hồng dẻo mang lại,
+                        để cho ra lò những miếng hồng đỏ thẫm đẹp mắt thì người sản xuất đã bỏ ra không ít công sức. Không những thế, đằng sau hồng sấy dẻo Đà Lạt cũng ẩn chứa một câu chuyện của riêng mình, 
+                        người ta không chỉ tìm mua hồng dẻo để ăn mà còn là để thưởng thức, để cảm nhận hương vị của núi rừng Đà Lạt.
+                    </p>
+
+                    <div class="main-image">
+                        <img src="/assets/img/hongsay3.jpg" alt="">
+                    </div>
+                    
+                    <ul class="feature">Đặc điểm nổi bật:
+                        <li>Mềm dẻo, thơm ngọt tự nhiên - Chế biến từ hồng chín cây, giữ nguyên vị ngọt thanh đặc trưng của Đà Lạt.</li>
+                        <li>Màu cam đỏ bắt mắt - Quyến rũ nhờ quy trình sấy lạnh giữ màu sắc tươi tắn.</li>
+                        <li>Giàu dinh dưỡng - Chứa vitamin A, C và chất xơ, tốt cho tiêu hóa và làn da.</li>
+                        <li>Tiện lợi - Dẻo mềm, không dính tay, dễ dàng bảo quản và mang theo.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- tin tức -->
+        <div class="right-content">
+            <div class="promotions">
+                <h2>TIN TỨC</h2>
+
+                <a href="#" class="promo-item">
+                    <div class="promo-image">
+                        <img src="/assets/img/tt2.png" alt="">
+                    </div>
+                    <div class="promo-info">
+                        <h3>Cách bảo quản trái cây</h3>
+                        <div class="author">Bởi FT-team</div>
+                        <div class="date">21/5/2025</div>
+                    </div>
+                </a>
+
+                <a href="#" class="promo-item">
+                    <div class="promo-image">
+                        <img src="/assets/img/tt3.png" alt="">
+                    </div>
+                    <div class="promo-info">
+                        <h3>10 mẹo bảo quản rau củ</h3>
+                        <div class="author">Bởi FT-team</div>
+                        <div class="date">21/5/2025</div>
+                    </div>
+                </a>
+
+                <a href="#" class="promo-item">
+                    <div class="promo-image">
+                        <img src="/assets/img/tt4.png" alt="">
+                    </div>
+                    <div class="promo-info">
+                        <h3>Cách ăn để đủ dinh dưỡng</h3>
+                        <div class="author">Bởi FT-team</div>
+                        <div class="date">21/5/2025</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
+    <div class="hr"></div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-header">
+                <h1>FRUITY</h1>
+                <p>CỬA HÀNG TRÁI CÂY TƯƠI NGON</p>
+                <p class="contact">Trụ sở chính: 235 Hoàng Quốc Việt, Cổ Nhuế, Bắc Từ Liêm, Hà Nội</p>
+                <p class="contact">Hotline: <a href="#">1900 2004</a></p>
+                <p class="contact">Email: <a href="#">fruity@gmail.com</a></p>
+            </div>
+
+            <!-- thông tin -->
+             <div class="footer-content">
+                <div class="footer-column">
+                    <h3>
+                        VỀ CHÚNG TÔI
+                    </h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>
+                        TIN KHUYẾN MẠI
+                    </h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>
+                        DỊCH VỤ
+                    </h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <!-- kết nối  -->
+                <div class="footer-column">
+                    <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+
+                    <div class="newsletter"></div>
+                    <h3>NHẬN TIN KHUYẾN MẠI</h3>
+                    <div class="newsletter-form">
+                        <input type="text" placeholder="Nhập email của bạn">
+                        <button>Đăng Ký</button>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </footer>
+    <div class="end"></div>
+    
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

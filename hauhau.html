@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dưa Hấu Không Hạt - NongsanViet</title>
+    <link rel="stylesheet" href="/assets/css/hauhau.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="/assets/fontawesome-free-5.15.4-web/js/all.min.js">
+</head>
+<body>
+    <header class="header">
+            <div class="container header-content">
+                <a href="index.html" class="logo">Fruity</a>
+
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- liên hệ -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <div>
+                            <div>Hotline:</div>
+                            <div>19002004</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div>
+                            <div>Email:</div>
+                            <div>support@fruity.vn</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- tài khoản -->
+                <div class="user-actions">
+                   <div class="account-dropdown">
+                        <button class="account-button">
+                            <i class="fas fa-user"></i>
+                            Tài Khoản
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="account-item">Đăng Nhập</a>
+                            <a href="#" class="account-item">Đăng Ký</a>
+                       </div>
+                   </div>
+
+                   <!-- giỏ hàng -->
+                    <a href="#" class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- navbar -->
+        <div class="navbar-wrapper">
+            <div class="navbar" id="navbar">
+                <div class="container">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-links active">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Giới Thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links dropdown-toggle">Sản Phẩm <i class="fas fa-chevron-down"></i></a>
+                            <div class="nav-dropdown">
+                                <a href="#" class="dropdown-item">Trái Cây</a>
+                                <a href="#" class="dropdown-item">Trái Cây Việt</a>
+                                <a href="#" class="dropdown-item">Trái Cây Nhập Khẩu</a>
+                                <a href="#" class="dropdown-item">Trái Cây Khô</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Tin Tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Liên Hệ</a>
+                        </li>
+    
+                        <div class="flash-sale">
+                            <i class="fas fa-bolt"></i>
+                            Flash Sale
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="container">
+        <div class="product-header">
+            <div class="product-image">
+                <img src="assets/img/duahau1 (1).png" alt="Dưa hấu không hạt 2.2kg - NongsanViet" class="main-image">
+                <div class="thumbnail-gallery">
+                    <img src="/assets/img/duahau1 (1).png" alt="Dưa hấu không hạt - Thumbnail 1" class="thumbnail">
+                    <img src="/assets/img/duahau1 (2).png" alt="Dưa hấu không hạt - Thumbnail 2" class="thumbnail">
+                    <img src="/assets/img/duahau1 (3).png" alt="Dưa hấu không hạt - Thumbnail 3" class="thumbnail">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Dưa Hấu Không Hạt</h1>
+                <div class="product-meta">
+                    <span class="product-brand">Thương hiệu: NongsanViet</span>
+                    <span class="product-status">Tình trạng: Còn hàng</span>
+                    <span class="product-rating">Đánh giá: ★ 4.5/5</span>
+                </div>
+                <div class="product-price">40.700 đ</div>
+                <div class="short-description">
+                    <h3>Mô tả ngắn</h3>
+                    <ul>
+                        <li>Dưa hấu không hạt có ruột đỏ, ngọt, không hạt, vỏ mỏng, dễ bảo quản.</li>
+                        <li>Hỗ trợ giảm cân nhờ ít calo, bổ sung vitamin và khoáng chất.</li>
+                    </ul>
+                </div>
+                <div class="quantity-section">
+                    <h3>Số lượng</h3>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" onclick="updateQuantity(-1)">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn" onclick="updateQuantity(1)">+</button>
+                    </div>
+                </div>
+                <button class="add-to-cart">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+        </div>
+        <div class="product-details">
+            <h2 class="section-title">Chi tiết sản phẩm</h2>
+            <div class="toggle-sections">
+                <h3 class="toggle-title" onclick="toggleSection('description-content')">Mô tả sản phẩm</h3>
+                <div id="description-content" class="toggle-content" style="display: block;">
+                    <ul>
+                        <li>Dưa được trồng trong điều kiện tự nhiên, đảm bảo an toàn và chất lượng.</li>
+                        <li>Thu hoạch và chế biến theo quy trình nghiêm ngặt để giữ nguyên hương vị tự nhiên.</li>
+                        <li>Có vị ngọt tự nhiên, hỗ trợ giảm cân nhờ ít calo, chứa vitamin C, mangan và arginine cải thiện insulin.</li>
+                        <li>Trợ giúp đường ruột, giảm đường máu cho bệnh nhân tiểu đường type 2.</li>
+                    </ul>
+                </div>
+                <h3 class="toggle-title" onclick="toggleSection('features-content')">Đặc điểm sản phẩm</h3>
+                <div id="features-content" class="toggle-content">
+                    <table class="product-specs">
+                        <tr>
+                            <td>Nhãn hiệu</td>
+                            <td>NongsanViet</td>
+                        </tr>
+                        <tr>
+                            <td>Nơi sản xuất</td>
+                            <td>Việt Nam</td>
+                        </tr>
+                        <tr>
+                            <td>Hạn sử dụng</td>
+                            <td>Bảo quản lạnh được từ 5 - 7 ngày</td>
+                        </tr>
+                        <tr>
+                            <td>Thông tin từ nhà sản xuất</td>
+                            <td>Không sử dụng sản phẩm khi có dấu hiệu hỏng, mốc</td>
+                        </tr>
+                        <tr>
+                            <td>Hướng dẫn bảo quản</td>
+                            <td>Bảo quản ở nhiệt độ mát, thoáng mát</td>
+                        </tr>
+                        <tr>
+                            <td>Hướng dẫn sử dụng</td>
+                            <td>Rửa sạch, ăn trực tiếp, ép nước hoặc làm sinh tố</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function updateQuantity(change) {
+            const input = document.querySelector('.quantity-input');
+            let value = parseInt(input.value);
+            value += change;
+            if (value < 1) value = 1;
+            input.value = value;
+        }
+        function toggleSection(sectionId) {
+            const sections = document.querySelectorAll('.toggle-content');
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.style.display = (section.style.display === 'none' || section.style.display === '') ? 'block' : 'none';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+        // Hiển thị mặc định mục "Mô tả sản phẩm" khi tải trang
+        window.onload = function() {
+            document.getElementById('description-content').style.display = 'block';
+        };
+    </script>
+
+    <div class="container">
+        <div class="Sotay">
+            <h1>SỔ TAY MẸO VẶT<h1>
+                <div class="content">
+                    <div class="card">
+                        <a href="#">
+                            <img src="/assets/img/mv1.png" alt="Hinh trai cay">
+                            <div class="card-content">
+                                <h3 class="card-title">Mẹo lựa trái cây ngon ngọt, tươi chuẩn</h3>
+                            <p class="card-text">
+                                Trái cây ngon không chỉ đẹp, già, dễ nhìn mà còn phải tốt sức khỏe mạnh để không gây sâu răng, bệnh tật. Tuy nhiên, để lựa chọn được trái cây ngon, bạn cần phải có mẹo chọn trái tốt nhất, ngon và bổ dưỡng.
+                            </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#">
+                            <img src="/assets/img/mv2.png" alt="Hinh qua tuoi">
+                            <div class="card-content">
+                                <h3 class="card-title">Cách chọn hoa quả tươi ngon và bổ dưỡng</h3>
+                            <p class="card-text">
+                                Thanh long chọn quả tròn, căng, màu đỏ sẻ căng bóng. Măng cụt hãy tìm cách nhánh căng hoa đỏ tươi, múi bền trong. Dưa hấu là quả có cuống mềm, gõ có tiếng vang, múi ngọt, bổ dưỡng tự nhiên.
+                            </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="/assets/img/mv3.png" alt="Hinh mua trai cay">
+                            <div class="card-content">
+                                <h3 class="card-title">Kinh nghiệm mua trái cây ngon</h3>
+                            <p class="card-text">
+                                Chọn những trái cây ngon, không có các chất độc hại, để dành ăn lâu dài. Đừng mua những trái cây bị sâu, bị thối, hư hỏng. Quả xoài chín vàng, múi ngọt, bổ dưỡng sẽ tăng sức khỏe hằng ngày.
+                            </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="/assets/img/mv4.png" alt="Hinh sai lam">
+                            <div class="card-content">
+                                <h3 class="card-title">Những sai lầm khi lựa chọn, sơ chế và bảo quản trái cây</h3>
+                            <p class="card-text">
+                                Mẹo trong những sai lầm thường gặp khi mua trái cây, chẳng hạn như lựa chọn trái cây hư hỏng. Bởi chúng không chỉ gây mất tiền mà còn có thể gây ảnh hưởng tới sức khỏe, dẫn đến nguy cơ mắc bệnh.
+                            </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Tin tức -->
+        <div class="tintuc">
+            <h1>TIN TỨC</h1>
+            <div class="content">
+                <div class="main-image-section">
+                    <a href="#">
+                        <img src="/assets/img/tt1.png" alt="Main Image" class="main-image">
+                        <p class="image-description">
+                            Cách để giữ các loại thực phẩm (vì dụ trái cây, rau củ) luôn tươi ngon khi bạn không có tủ lạnh. Trái cây cần phân loại kỹ trước khi bảo quản, ví dụ tách các loại trái cây như chuối, táo, lê vì các loại trái cây này thường tiết ra khí ethylene, giúp trái cây chín nhanh hơn. Nếu bạn để lẫn các loại trái cây này với các loại trái cây khác, chúng sẽ nhanh hỏng hơn. Ngoài ra, nếu bạn không có tủ lạnh, hãy chọn những nơi thoáng mát, không để trái cây ở nơi có ánh nắng trực tiếp hoặc nhiệt độ cao.
+                        </p>
+                    </a>
+                </div>                                                                                                                                                                                                                                  
+                
+                <div class="info-sections">
+                        <a href="#" class="info-box">
+                            <img src="/assets/img/tt2.png" alt="Info Image 1">
+                            <div>
+                                <h3>Cách bảo quản trái cây</h3>
+                                <p>
+                                    Trái cây cần mua về để ở nơi thoáng mát, không để nơi có ánh nắng trực tiếp. Xem ngay những cách bảo quản trái cây tươi lâu.
+                                </p>
+                            </div>
+                        </a>
+                
+                        <a href="#" class="info-box">
+                            <img src="/assets/img/tt3.png" alt="Info Image 2">
+                            <div>
+                                <h3>10 mẹo bảo quản rau củ</h3>
+                                <p>
+                                    Biết cách bảo quản rau củ trong tủ lạnh hoặc không có tủ lạnh giúp bạn tiết kiệm chi phí, giảm thực phẩm thừa.
+                                </p>
+                            </div>
+                        </a>
+                    
+                        <a href="#" class="info-box">
+                            <img src="/assets/img/tt4.png" alt="Info Image 3">
+                            <div>
+                                <h3>Cách ăn để đủ dinh dưỡng</h3>
+                                <p>
+                                    Ăn đầy đủ một chế độ dinh dưỡng quan tâm đến nguồn gốc xuất xứ, ăn đúng cách. Theo các nghiên cứu, sử dụng nhiều loại rau củ sẽ giúp cơ thể tăng cường sức đề kháng.
+                                </p>
+                            </div>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="hr"></div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-header">
+                <h1>FRUITY</h1>
+                <p>CỬA HÀNG TRÁI CÂY TƯƠI NGON</p>
+                <p class="contact">Trụ sở chính: 235 Hoàng Quốc Việt, Cổ Nhuế, Bắc Từ Liêm, Hà Nội</p>
+                <p class="contact">Hotline: <a href="#">1900 2004</a></p>
+                <p class="contact">Email: <a href="#">fruity@gmail.com</a></p>
+            </div>
+
+            <!-- thông tin -->
+             <div class="footer-content">
+                <div class="footer-column">
+                    <h3>
+                        VỀ CHÚNG TÔI
+                    </h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>
+                        TIN KHUYẾN MẠI
+                    </h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>
+                        DỊCH VỤ
+                    </h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <!-- kết nối  -->
+                <div class="footer-column">
+                    <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+
+                    <div class="newsletter"></div>
+                    <h3>NHẬN TIN KHUYẾN MẠI</h3>
+                    <div class="newsletter-form">
+                        <input type="text" placeholder="Nhập email của bạn">
+                        <button>Đăng Ký</button>
+                    </div>
+                </div>
+             </div>
+        </div>
+     </footer>
+     <div class="end"></div>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

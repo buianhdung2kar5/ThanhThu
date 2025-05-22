@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trái Vải</title>
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/vai.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="/assets/fontawesome-free-5.15.4-web/js/all.min.js">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Fruity</a>
+
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <!-- liên hệ -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <div>
+                        <div>Hotline:</div>
+                        <div>19002004</div>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div>
+                        <div>Email:</div>
+                        <div>support@fruity.vn</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tài khoản -->
+            <div class="user-actions">
+               <div class="account-dropdown">
+                    <button class="account-button">
+                        <i class="fas fa-user"></i>
+                        Tài Khoản
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="account-item">Đăng Nhập</a>
+                        <a href="#" class="account-item">Đăng Ký</a>
+                   </div>
+               </div>
+
+               <!-- giỏ hàng -->
+                <a href="#" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- navbar -->
+    <div class="navbar-wrapper">
+        <div class="navbar" id="navbar">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-links active">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-links">Giới Thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-links dropdown-toggle">Sản Phẩm <i class="fas fa-chevron-down"></i></a>
+                        <div class="nav-dropdown">
+                            <a href="#" class="dropdown-item">Trái Cây</a>
+                            <a href="#" class="dropdown-item">Trái Cây Việt</a>
+                            <a href="#" class="dropdown-item">Trái Cây Nhập Khẩu</a>
+                            <a href="#" class="dropdown-item">Trái Cây Khô</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-links">Tin Tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-links">Liên Hệ</a>
+                    </li>
+
+                    <div class="flash-sale">
+                        <i class="fas fa-bolt"></i>
+                        Flash Sale
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- thông tin sản phẩm -->
+     <div class="container">
+        <div class="product-section">
+            <div class="product-image">
+                <img src="/assets/img/vải1.webp" alt="">
+            </div>
+
+            <div class="product-details">
+                <h1 class="product-title">
+                    Trái Vải
+                </h1>
+                
+                <div class="product-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Thương hiệu:</span>
+                        <span class="meta-value">NongsanViet</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Tình trạng:</span>
+                        <span class="meta-value">Còn hàng</span>
+                    </div>
+                </div>
+    
+                <div class="product-price">
+                    <span>79.000 đ</span>
+                </div>
+    
+                <div class="product-info">
+                    <div class="info-item">
+                        <strong>Nguồn gốc:</strong> Việt Nam
+                    </div>
+                    <div class="info-item">
+                        <strong>Khối lượng:</strong> 1.0 Kg/hộp
+                    </div>
+                </div>
+    
+                <div class="product-description">
+                    <p>Trái vải có vỏ màu đỏ, thịt dày, màu trắng đục. Khi ăn bạn sẽ cảm nhận được vị ngọt thơm, 
+                        mềm đang tan ra với nước mát lạnh chảy vào cuống họng giúp bạn giải khát trong những ngày hè nắng nóng.
+                    </p>
+                </div>
+    
+                <div class="quantity-control">
+                    <div class="quantity-btn decrease">-</div>
+                    <input type="text" class="quantity-input" id="quantity" value="1" readonly>
+                    <div class="quantity-btn increase">+</div>
+                </div>
+    
+                <button class="add-to-cart-btn" onclick="addToCart()">
+                    <i class="fas fa-shopping-cart"></i>
+                    Thêm vào giỏ hàng
+                </button>
+            </div>
+         </div>
+     </div>
+     
+     <!-- thêm vào giỏ hàng -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <div class="success">
+                    <i class="fas fa-check"></i>Sản phẩm vừa được thêm vào giỏ hàng 
+                </div>
+                <button class="close-modal" onclick="closeModal()">X</button>
+            </div>
+
+            <div class="cart-item">
+                <div class="cart-item-info">
+                    <img src="/assets/img/dautay1.webp" alt="Trái vải">
+                    <div>Trái vải</div>
+                </div>
+
+                <div class="cart-quantity">
+                    <button class="decrease-cart">-</button>
+                    <input type="text" value="2" id="cartQuantity" readonly>
+                    <button class="increase-carts">+</button>
+                </div>
+
+                <div class="cart-item-price" id="itemPrice">158.000 đ</div>
+            </div>
+
+            <div class="cart-total">
+                <div>GIỎ HÀNG CỦA BẠN (<span id="itemCount">2</span>sản phẩm)</div>
+                <div>Tổng tiền thanh toán: <span id="totalPrice">158.000đ</span> </div>
+            </div>
+
+            <div class="cart-buttons">
+                <button class="view-cart">Tới giỏ hàng</button>
+                <button class="checkout">Tiến hành thanh toán</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- thông tin thêm -->
+    <div class="container">
+        <h1 class="extra">SẢN PHẨM LIÊN QUAN</h1>
+
+    <div class="extra-products">
+        <a href="hauhau.html" target="_blank" class="extra-product">
+            <div class="extra-product-image">
+                <img src="/assets/img/duahau1 (1).png" alt="">
+            </div>
+            <div class="extra-product-details">
+                <div class="extra-product-name">Dưa hấu không hạt</div>
+            <div class="extra-product-price">40.700 đ</div>
+            </div>
+        </a>
+        
+        <a href="dautay.html" target="_blank" class="extra-product">
+            <div class="extra-product-image">
+                <img src="/assets/img/dautay1.webp" alt="">
+            </div>
+            <div class="extra-product-details">
+                <div class="extra-product-name">Dâu tây Hàn Quốc</div>
+                <div class="extra-product-price">199.000 đ</div>
+            </div>
+        </a>
+
+        <a href="xoai.html" target="_blank" class="extra-product">
+            <div class="extra-product-image">
+                <img src="/assets/img/xoaisay2.jpg" alt="">
+            </div>
+            <div class="extra-product-details">
+                <div class="extra-product-name">Xoài sấy dẻo</div>
+                <div class="extra-product-price">35.000 đ</div>
+            </div>
+        </a>
+    </div>
+
+    <!-- mô tả và tin tức -->
+    <div class="main-content">
+        <div class="left-content">
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button id="mo-ta-btn" class="tab-button active" onclick="openTab('mo-ta')">MÔ TẢ</button>
+                    <button id="thong-tin-btn" class="tab-button" onclick="openTab('thong-tin')">THÔNG TIN</button>
+                </div>
+
+                <!-- mô tả -->
+                <div id="mo-ta" class="tab-content active">
+                    <p>Trái vải loại trái cây phổ biến được yêu thích mỗi khi hè đến, 
+                        vải giàu Vitamin cùng các dưỡng chất nên rất tốt cho sức khỏe cũng như làn da của bạn.
+                    </p>
+
+                    <div class="main-image">
+                        <img src="/assets/img/vải1.webp" alt="">
+                    </div>
+                    
+                    <p class="feature">
+                        Vải giúp hệ tiêu hóa khỏe, làm sạch dạ dày, giúp ăn ngon miệng và chữa chứng ợ nóng cũng như cũng như cảm giác nóng dạ dày. Vải cũng giúp tăng cường mức năng lượng trong cơ thể và góp phần mang lại sức khỏe cho cả gia đình bạn. 
+                        Hạt vải có chứa các chất làm se được sử dụng để chữa trị các bệnh đường tiêu hóa và giúp cơ thể đào thải giun đường ruột. Trái vải còn chứa chất xơ hòa tan giúp kiểm soát các vấn đề gặp phải ở đường ruột và giữ dạ dày khỏi các hợp chất độc cũng như giúp làm sạch ruột kết.
+                    </p>
+                </div>
+
+                <!-- thông tin -->
+                 <div id="thong-tin" class="tab-content">
+                    <p>Các nội dung khác...</p>
+                 </div>
+            </div>
+        </div>
+
+        <!-- tin tức -->
+        <div class="right-content">
+            <div class="promotions">
+                <h2>TIN TỨC</h2>
+
+                <a href="#" class="promo-item">
+                    <div class="promo-image">
+                        <img src="/assets/img/tt2.png" alt="">
+                    </div>
+                    <div class="promo-info">
+                        <h3>Cách bảo quản trái cây</h3>
+                        <div class="author">Bởi FT-team</div>
+                        <div class="date">21/5/2025</div>
+                    </div>
+                </a>
+
+                <a href="#" class="promo-item">
+                    <div class="promo-image">
+                        <img src="/assets/img/tt3.png" alt="">
+                    </div>
+                    <div class="promo-info">
+                        <h3>10 mẹo bảo quản rau củ</h3>
+                        <div class="author">Bởi FT-team</div>
+                        <div class="date">21/5/2025</div>
+                    </div>
+                </a>
+
+                <a href="#" class="promo-item">
+                    <div class="promo-image">
+                        <img src="/assets/img/tt4.png" alt="">
+                    </div>
+                    <div class="promo-info">
+                        <h3>Cách ăn để đủ dinh dưỡng</h3>
+                        <div class="author">Bởi FT-team</div>
+                        <div class="date">21/5/2025</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
+    <div class="hr"></div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-header">
+                <h1>FRUITY</h1>
+                <p>CỬA HÀNG TRÁI CÂY TƯƠI NGON</p>
+                <p class="contact">Trụ sở chính: 235 Hoàng Quốc Việt, Cổ Nhuế, Bắc Từ Liêm, Hà Nội</p>
+                <p class="contact">Hotline: <a href="#">1900 2004</a></p>
+                <p class="contact">Email: <a href="#">fruity@gmail.com</a></p>
+            </div>
+
+            <!-- thông tin -->
+             <div class="footer-content">
+                <div class="footer-column">
+                    <h3>
+                        VỀ CHÚNG TÔI
+                    </h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>
+                        TIN KHUYẾN MẠI
+                    </h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>
+                        DỊCH VỤ
+                    </h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <!-- kết nối  -->
+                <div class="footer-column">
+                    <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+
+                    <div class="newsletter"></div>
+                    <h3>NHẬN TIN KHUYẾN MẠI</h3>
+                    <div class="newsletter-form">
+                        <input type="text" placeholder="Nhập email của bạn">
+                        <button>Đăng Ký</button>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </footer>
+    <div class="end"></div>
+    
+    <script src="/assets/js/main.js"></script>
+    <script src="./assets/js/vai.js" defer></script>
+</body>
+</html>
